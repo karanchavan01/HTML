@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+
+<body>
+    <form>
+        <h2>Job Application</h2>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter full name" required>
+            <br />
+            <br />
+
+            <label for="emailId">Email Id: </label>
+            <input type="email" name="emailId" id="emailId" placeholder="Enter E-mail Id" required>
+            <br />
+            <br />
+
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+            <br />
+            <br />
+
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob">
+            <br />
+            <br />
+
+            <span>Gender: </span>
+            <label for="radio1">Male</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio2">Female</label>
+            <input type="radio" name="radio" id="radio2">
+            <br />
+            <br />
+
+            <label for="highEdu">Highest Education: </label>
+            <select name="highEdu" id="highEdu">
+                <option value="highschool">High School</option>
+                <option value="associatedegree">Associate's Degree</option>
+                <option value="bachelordegree">Bachelor's Degree</option>
+                <option value="masterdegree">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select>
+            <br />
+            <br />
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+                <option value="none">--Choose country--</option>
+                <option value="unitedstates">United States</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="russia">Russia</option>
+            </select>
+
+            <label for="file1">Resume: </label>
+            <input type="file" name="file1" id="file1">
+            <br />
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="street">Street: </label>
+            <input type="text" name="street" id="street">
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city">
+            <label for="state">State: </label>
+            <input type="text" name="state" id="state">
+            <label for="zcode">Zip Code: </label>
+            <input type="text" name="zcode" id="zcode">
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Soft Skills</legend>
+            
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">Web Developement</label>
+            <br />
+            
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">Programming</label>
+            <br />
+            
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">Android/iOS App Development</label>
+            <br />
+            
+            <input type="checkbox" name="checkbox4" id="checkbox4">
+            <label for="checkbox4">Data Science & Machine Learning</label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Awards, Achievements & Other Information</legend>
+            <label for="textarea1">Comments: </label>
+            <br />
+            <textarea name="textarea1" id="textarea1" cols="40" rows="10"></textarea>
+
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms">
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
